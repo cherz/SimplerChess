@@ -1,0 +1,40 @@
+SimplerChess. ... It's chess, w/o castling and other sneaky advanced moves. Otherwise, it's standard chess.
+
+Board Setup:
+
+    a  b  c  d  e  f  g  h
+    |  |  |  |  |  |  |  |
+    ----------------------------
+8 - ♖  ♘  ♗  ♕  ♔  ♗  ♘  ♖
+7 - ♙  ♙  ♙  ♙  ♙  ♙  ♙  ♙
+6 -                
+5 -
+4 -
+3 -                
+2 - ♟︎  ♟ ︎ ♟  ︎♟ ︎ ♟︎  ♟︎  ♟ ︎ ♟︎
+1 - ♜  ♞  ♝  ♛  ♚  ♝  ♞  ♜ 
+
+Pieces:
+K - King
+Q - Queen
+k - Knight
+B - Bishop
+R - Rook
+P - Pawn
+
+Movements:
+# - Number of Squares to Move (int)
+F - Forward
+B - Backward
+L - Left
+R - Right
+D - Diagonal
+
+Each piece has a Name, Movement, Point value, and Unicode
+Piece Name    Movement  Points  Unicode (White||Black)
+♔♚   King    1  FBLRD   999    \u2654; || \u265A;
+♕♛   Queen   5  FBLRD   9      \u2655; || \u265B;
+♖♜   Rook    5  FBLR    5      \u2656; || \u265C;
+♗♝   Bishop  5  D       3      \u2657; || \u265D;
+♘♞   Knight  4  3 - 1   3      \u2658; || \u265E;
+♙♟︎   Pawn    1  F       1      \u2659; || \u265F;
