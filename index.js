@@ -29,4 +29,3 @@ const BPawn = new Piece("Pawn",1,[1,0,0,0,0],1,'\u265F',"Black");
 // CHESS BOARD
 var boardarr = [];
 var ChessBoard = new Board(BoardSize, boardarr);
-ChessBoard.drawBoard;
