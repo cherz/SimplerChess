@@ -3,5 +3,53 @@
         {
             "path": "."
         }
-    ]
+    ],
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            
+            
+
+            {
+                "version": "0.2.0",
+                  "configurations": [
+                    {
+                      "type": "node",
+                      "request": "launch",
+                      "name": "Launch Current Opened File",
+                      "program": "${file}"
+                    }
+                  ]
+             },
+            {
+                "name": "Launch Program",
+                "program": "${workspaceFolder}/app.js",
+                "request": "launch",
+                "skipFiles": [
+                    "<node_internals>/**"
+                ],
+                "type": "pwa-node"
+            },
+            {
+                "name": "Attach by Process ID",
+                "processId": "${command:PickProcess}",
+                "request": "attach",
+                "skipFiles": [
+                    "<node_internals>/**"
+                ],
+                "type": "pwa-node"
+            },
+
+            {
+                "type": "pwa-node",
+                "request": "launch",
+                "name": "Launch Program",
+                "skipFiles": [
+                    "<node_internals>/**"
+                ],
+                "program": "${file}",
+                "__workspaceFolder": "."
+            }
+        ]
+    }
 }

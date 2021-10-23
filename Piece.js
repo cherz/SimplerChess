@@ -1,7 +1,7 @@
 // The Piece Class
 
 class Piece {
-  constructor(name, points, unicodeChar, team, posX, posY) {
+  constructor(name, points, unicodeChar, team, posX, posY, isAlive) {
     this.name = name;
     // this.spaces = spaces; // number of spaces it can move
     // this.directions = directions; // array containing the possible available direction
@@ -10,7 +10,10 @@ class Piece {
     this.team = team;
     this.posX = posX;
     this.posY = posY;
+    this.isAlive = isAlive;
   }
 }
+
+// TODO: Build Setters
 
 module.exports = Piece;

@@ -17,7 +17,7 @@ Board Setup:
 Pieces:
 K - King
 Q - Queen
-k - Knight
+N - Knight
 B - Bishop
 R - Rook
 P - Pawn
